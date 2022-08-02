@@ -1,0 +1,115 @@
+
+
+.page__background {
+    background-color: #1f1f1f;
+}
+.tabbar:not(.tabbar--top) {
+    padding-bottom: 0;
+    background-color: #000;
+}
+.profile-pic {
+  width: 200px;
+  margin: 37% 0 40% 25%;
+}
+
+.profile-pic > img {
+  display: block;
+  max-width: 70%;
+}
+
+  ons-list-item {
+    color: #444;
+  }
+  .card2 {
+background: linear-gradient(to right, #369cbf, #0045ff);
+}
+.card1 {
+background: linear-gradient(to right, #916e2e, #ffa500);
+}
+.card3 {
+background: linear-gradient(to right, #f53838, #ff0000);
+}
+
+.card4 {
+background: linear-gradient(to right, #ce45d7, #ff0096);
+}
+.card5 {
+background: linear-gradient(to right, #4bf150, #00ff16);
+}
+.card6 {
+background: linear-gradient(to right, #1d6f64, #00ffdd);
+}
+i.fa-brands, .fa-solid {
+    font-size: x-large;
+}
+.center toolbar__center toolbar__title {
+    color: #fff;
+}
+      ons-card {
+        cursor: pointer;
+        color: #fff;
+      }
+
+      .card__title,
+      .card--material__title {
+        font-size: 20px;
+      }
+
+.right-icon {
+    margin-left: 10px;
+  }
+
+  .right-label {
+    color: #666;
+  }
+  .pull-hook-content {
+    color: #666;
+    transition: transform .25s ease-in-out;
+  }
+  #lorem-dialog .dialog-container {
+    height: 200px;
+  }
+
+  ons-list-title {
+    margin-top: 20px;
+  }
+  .button-margin {
+    margin: 6px 0;
+  }
+  .carousel-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .color-tag {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .dots {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+  }
+
+  .dots > span {
+    cursor: pointer;
+  }
+  .after-list {
+    margin: 20px;
+    text-align: center;
+  }
+  .intro {
+    padding: 0 20px 0;
+    margin-top: 70px;
+    text-align: left;
+    color: #fff;
+    font-size: 1.5rem;
+}

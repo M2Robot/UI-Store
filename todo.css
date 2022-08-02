@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,600,700');
+
+/* General */
+body {
+    font-family: 'Cabin','Arial', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #1f1f1f;
+}
+.container{
+    margin: 0 auto;
+    max-width:1200px;
+}
+a,
+a:link {
+    outline: none;
+}
+h1 {
+    font-size: 72px;
+    margin: 20px 0;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+.title-date{
+    color: #898989;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+}
+#to-do-app {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+    padding:50px 0 25px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.to-do-list:after{
+    background-color: #D492A6;
+    border-radius: 15px;
+    content: "";
+    display: block;
+    position: absolute;
+    top:10px;
+    left:0;
+    width:95%;
+    height:100%;
+    transform: translateX(2.5%);
+    z-index:-1;  
+}
+.to-do-list:before{
+    background-color: #DA6F87;
+    border-radius: 15px;
+    content: "";
+    display: block;
+    position: absolute;
+    top:20px;
+    left:0;
+    width:90%;
+    height:100%;
+    transform: translateX(5%);
+    z-index:-2;  
+}
+.task-container{
+    margin: 0 auto;
+    max-width:550px;
+    opacity:0;
+    visibility: hidden;
+    transition: all 250ms ease-in-out;
+}
+.tasker-container{
+    min-height:300px;
+}
+/* Form elements */
+input[type="text"] {
+    height: 56px;
+    padding: 10px;
+    font-size: 24px;
+    box-sizing: border-box;
+    width:calc( 100% - 63px );
+}
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+button {
+    position: relative;
+    height: 56px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: #6e2f24;
+}
+button:active {
+    top: 2px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+#add-task{
+    background-color: #000000;
+    color: #fff;
+    width:60px;
+}
+
+.add-task-button {
+    background-color: #000;
+    border-radius: 50px;
+    color: rgb(255 255 255);
+    cursor: pointer;
+    text-align: center;
+    font-size: 62px;
+    font-weight: 200;
+    font-family: 'Work Sans','Arial', sans-serif;
+    margin: 25px auto;  
+    width: 60px;
+    transition: background 200ms ease-in;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.add-task-button:hover{
+    background-color: #4d2d33;
+    color: #fff;
+}
+.add-task-button-visible{
+    opacity: 1;
+    visibility: visible;
+}
+/* List styles */
+ul {
+    margin: 20px 0;
+    padding: 0;
+}
+ul label{
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+
+ul li {
+    list-style-type: none;
+    font-size: 24px;
+    border: 2px #000000 solid;
+    margin-bottom: 0;
+    padding: 15px 35px;
+    text-align: left;
+    cursor: pointer;
+}
+ul li:hover .delete-button{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* User interface */
+input[type="text"]#todo{
+    width: 67%;
+    margin-right: 0;
+}
+button#submit{
+    width: 30%;
+    display: block;
+    float: right;
+}
+.fa{
+    padding: 5px 5px;
+    height: auto;
+    float: right;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    color: #A09FA4;
+}
+.fa-check-circle{
+    color:#D8D8DA;
+}
+#clear-list{
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 15px;
+    font-size: 32px;
+}
+.delete-button{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.error-msg {
+	display: none;
+	background: rgba(237, 28, 36, 0.7);
+	color: #fff;
+	padding: 14px;
+	margin-bottom: 10px;
+	text-align: center;
+    max-width:calc(400px * 0.58);
+}
+input[type=checkbox]{
+    display:none;
+}
+input[type=checkbox] + label {
+  color: rgb(129, 128, 133);
+} 
+input[type=checkbox]:checked + label {
+    color: #D8D8DA;
+    text-decoration: line-through;
+}
